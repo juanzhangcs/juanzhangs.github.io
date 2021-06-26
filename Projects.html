@@ -1,5 +1,15 @@
 <html>
     <body style="margin-left:20%; margin-right:20%;">
+        <style>
+            .vertical-line{
+              width: 1px; /* Line width */
+              background-color: black; /* Line color */
+              height: 100%; /* Override in-line if you want specific height. */
+              float: left; /* Causes the line to float to left of content. 
+                You can instead use position:absolute or display:inline-block
+                if this fits better with your design */
+            }
+            </style>
         <br />
         <br />
         <br />
@@ -13,10 +23,16 @@
         <br />
         <br />
         <div align="center">
-            <a href="index.html"><font color= #003D79 size="4">Home</font></a>|
-            <a href="activities.html"><font color= #003D79 size="4">New Activities</font></a> |
-            <a href="publications.html"><font color= #003D79 size="4">Publications </font> </a> |
-            <a href="Teaching.html"><font color= #003D79 size="4">Teaching</font></a> |
+            <a href="index.html"><font color= #003D79 size="4">Home</font></a>
+            <div class="vertical-line" style="height: 45px;">
+                  <a href="activities.html"><font color= #003D79 size="4">New Activities</font></a>
+            </div>
+            <div class="vertical-line" style="height: 45px;">
+                 <a href="publications.html"><font color= #003D79 size="4">Publications </font> </a>
+            </div>
+            <div class="vertical-line" style="height: 45px;">
+                <a href="Teaching.html"><font color= #003D79 size="4">Teaching</font></a> 
+            </div>
             <a href="usefullinks.html"><font color= #003D79 size="4">Usefull Links</font></a>
         
     </div>
